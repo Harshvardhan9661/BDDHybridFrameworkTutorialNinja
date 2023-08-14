@@ -8,10 +8,11 @@ import org.testng.Assert;
 
 import utility.Elementutility;
 
-public class Profilepage {
+public class Profilepage extends Headersection{
 	WebDriver driver;
 	Elementutility eutility;
 	public Profilepage(WebDriver driver) {
+		super(driver);
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 		eutility=new Elementutility(driver);
@@ -27,7 +28,7 @@ public class Profilepage {
 		}
 
 }
-	@FindBy(xpath="//a[@title='My Account']")
+	/*@FindBy(xpath="//a[@title='My Account']")
 	public WebElement  myaccount;
 	public void clickonprofile() {
 		eutility.clickonelement(30, myaccount);
@@ -36,6 +37,6 @@ public class Profilepage {
 	public WebElement  logout;
 	public void verifylogout() {
 		Assert.assertTrue(logout.isEnabled());
-	}
+	}*/
 	
 	}
