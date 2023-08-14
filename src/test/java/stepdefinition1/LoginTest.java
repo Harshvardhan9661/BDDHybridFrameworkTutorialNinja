@@ -1,6 +1,10 @@
 package stepdefinition1;
 
+import java.net.http.HttpRequest;
+
 import org.openqa.selenium.WebDriver;
+
+import com.github.dockerjava.transport.DockerHttpClient.Request;
 
 import config.Readconfig;
 import io.cucumber.java.en.And;
@@ -119,6 +123,7 @@ public class LoginTest  {
 		}
 	@And("user should close the browser")
 	public void user_should_close_the_browser() {
+		System.out.println(Thread.currentThread());
 		driver.close();
 	}
 	@And("after closing user should again open the browser")
@@ -127,13 +132,15 @@ public class LoginTest  {
 		driver=Baseclass.getdriver();
 		Readconfig rc=new Readconfig();
 		driver.get(rc.geturl());
+		System.out.println(Thread.currentThread());
+		
 		driver.manage().window().maximize();
 	}
 	@Then("user should see the logout button inside profile page")
 	public void user_should_see_the_logout_button_inside_profile_page() {
 		pp=new Profilepage(driver);
-		pp.clickonprofile();
-		pp.verifylogout();
+		pp.clickonmyaccount();
+		pp.clickonlogout();
 	}
 	@When("user should click on continue button under new customer section")
 	public void user_should_click_on_continue_button_under_new_customer_section() {

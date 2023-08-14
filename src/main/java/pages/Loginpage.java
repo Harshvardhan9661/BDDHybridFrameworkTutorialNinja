@@ -93,9 +93,10 @@ public class Loginpage {
 	
 		
 	}
+	@FindBy(xpath="//ul[@class='breadcrumb']/li")
+	public List<WebElement> breakcrumb;
 	public void getbeakcrumb() {
-		List<WebElement> listweb=driver.findElements(By.xpath("//ul[@class='breadcrumb']/li"));
-		for(WebElement we : listweb ) {
+		for(WebElement we : breakcrumb ) {
 			System.out.println(we.getText());
 		}
 	}

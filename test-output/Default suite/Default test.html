@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 13 12:07:06 IST 2023</td>
+<td>Started on:</td><td>Mon Aug 14 16:12:11 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>119 seconds (119725 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48720 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,24 +77,24 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the logging feature again after closing brower", "login page credential"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[text()=&apos;Logout&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//a[text()=&apos;Logout&apos;])[1]&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at utility.Elementutility.waitonelement1(Elementutility.java:35)
-	at utility.Elementutility.clickonelement(Elementutility.java:24)
-	at pages.Profilepage.clickonlogout(Profilepage.java:38)
-	at stepdefinition1.LoginTest.user_should_see_the_logout_button_inside_profile_page(LoginTest.java:136)
+	at utility.Elementutility.waitonelement1(Elementutility.java:34)
+	at utility.Elementutility.clickonelement(Elementutility.java:23)
+	at pages.Headersection.clickonlogout(Headersection.java:34)
+	at stepdefinition1.LoginTest.user_should_see_the_logout_button_inside_profile_page(LoginTest.java:143)
 	at ✽.user should see the logout button inside profile page(file:///C:/Users/harshavardhan/eclipse-workspace/BDDHybridFrameworkTutorialNinja/src/test/resource/features1/login.feature:53)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Logout&apos;]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//a[text()=&apos;Logout&apos;])[1]&quot;}
   (Session info: chrome=115.0.5790.171)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e2234297d8559dd6efacadcb2a2692a, findElement {using=xpath, value=//a[text()=&apos;Logout&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\HARSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55990}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55990/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e2234297d8559dd6efacadcb2a2692a
-	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+Command: [377d868b11782a74cbeec206426bb071, findElement {using=xpath, value=(//a[text()=&apos;Logout&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\HARSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56118}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56118/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 377d868b11782a74cbeec206426bb071
+	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -111,7 +111,7 @@ Session ID: 5e2234297d8559dd6efacadcb2a2692a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
@@ -119,10 +119,10 @@ Session ID: 5e2234297d8559dd6efacadcb2a2692a
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at utility.Elementutility.waitonelement1(Elementutility.java:35)
-	at utility.Elementutility.clickonelement(Elementutility.java:24)
-	at pages.Profilepage.clickonlogout(Profilepage.java:38)
-	at stepdefinition1.LoginTest.user_should_see_the_logout_button_inside_profile_page(LoginTest.java:136)
+	at utility.Elementutility.waitonelement1(Elementutility.java:34)
+	at utility.Elementutility.clickonelement(Elementutility.java:23)
+	at pages.Headersection.clickonlogout(Headersection.java:34)
+	at stepdefinition1.LoginTest.user_should_see_the_logout_button_inside_profile_page(LoginTest.java:143)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,25 +173,25 @@ Session ID: 5e2234297d8559dd6efacadcb2a2692a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1867176619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1867176619'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //a[text()=&apos;Logout&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1940407755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1940407755'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: (//a[text()=&apos;Logout&apos;])[1]&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at utility.Elementutility.waitonelement1(Elementutility.java:35)
-	at utility.Elementutility.clickonelement(Elementutility.java:24)
-	at pages.Profilepage.clickonlogout(Profilepage.java:38)
-	at stepdefinition1.LoginTest.user_should_see_the_logout_button_inside_profile_page(LoginTest.java:136)
+	at utility.Elementutility.waitonelement1(Elementutility.java:34)
+	at utility.Elementutility.clickonelement(Elementutility.java:23)
+	at pages.Headersection.clickonlogout(Headersection.java:34)
+	at stepdefinition1.LoginTest.user_should_see_the_logout_button_inside_profile_page(LoginTest.java:143)
 	at ✽.user should see the logout button inside profile page(file:///C:/Users/harshavardhan/eclipse-workspace/BDDHybridFrameworkTutorialNinja/src/test/resource/features1/login.feature:53)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=&apos;Logout&apos;]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//a[text()=&apos;Logout&apos;])[1]&quot;}
   (Session info: chrome=115.0.5790.171)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e2234297d8559dd6efacadcb2a2692a, findElement {using=xpath, value=//a[text()=&apos;Logout&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\HARSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55990}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55990/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e2234297d8559dd6efacadcb2a2692a
-	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+Command: [377d868b11782a74cbeec206426bb071, findElement {using=xpath, value=(//a[text()=&apos;Logout&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: C:\Users\HARSHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56118}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56118/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 377d868b11782a74cbeec206426bb071
+	at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -208,7 +208,7 @@ Session ID: 5e2234297d8559dd6efacadcb2a2692a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
@@ -216,10 +216,10 @@ Session ID: 5e2234297d8559dd6efacadcb2a2692a
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	at utility.Elementutility.waitonelement1(Elementutility.java:35)
-	at utility.Elementutility.clickonelement(Elementutility.java:24)
-	at pages.Profilepage.clickonlogout(Profilepage.java:38)
-	at stepdefinition1.LoginTest.user_should_see_the_logout_button_inside_profile_page(LoginTest.java:136)
+	at utility.Elementutility.waitonelement1(Elementutility.java:34)
+	at utility.Elementutility.clickonelement(Elementutility.java:23)
+	at pages.Headersection.clickonlogout(Headersection.java:34)
+	at stepdefinition1.LoginTest.user_should_see_the_logout_button_inside_profile_page(LoginTest.java:143)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -272,55 +272,6 @@ Session ID: 5e2234297d8559dd6efacadcb2a2692a
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>44</td>
-<td>runner1.Myrunnertest@7ce69770</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the login functionality using tab key", "login page credential"</td>
-<td></td>
-<td>7</td>
-<td>runner1.Myrunnertest@7ce69770</td></tr>
-<tr>
-<td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the login feature with invalid credential", "login page credential"</td>
-<td></td>
-<td>7</td>
-<td>runner1.Myrunnertest@7ce69770</td></tr>
-<tr>
-<td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the text into the Password field is toggled to hide its visibility", "login page credential"</td>
-<td></td>
-<td>6</td>
-<td>runner1.Myrunnertest@7ce69770</td></tr>
-<tr>
-<td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the login feature with valid credential", "login page credential"</td>
-<td></td>
-<td>8</td>
-<td>runner1.Myrunnertest@7ce69770</td></tr>
-<tr>
-<td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the login feature with invalid credential", "login page credential"</td>
-<td></td>
-<td>7</td>
-<td>runner1.Myrunnertest@7ce69770</td></tr>
-<tr>
-<td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify the forgotten password functionality", "login page credential"</td>
-<td></td>
-<td>9</td>
-<td>runner1.Myrunnertest@7ce69770</td></tr>
-<tr>
-<td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user is able to navigate to different pages from Login page", "login page credential"</td>
-<td></td>
-<td>15</td>
-<td>runner1.Myrunnertest@7ce69770</td></tr>
-<tr>
-<td title='runner1.Myrunnertest.runScenario()'><b>runScenario</b><br>Test class: runner1.Myrunnertest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate the login feature with valid credential", "login page credential"</td>
-<td></td>
-<td>12</td>
 <td>runner1.Myrunnertest@7ce69770</td></tr>
 </table><p>
 </body>
